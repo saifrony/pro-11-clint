@@ -25,11 +25,11 @@ const Header = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Visa Center</a>
+   <Link className="btn btn-ghost normal-case text-xl" to='/'>Visa Center</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
-      <li><a>Item 1</a></li>
+      <li><Link to='/'>Home</Link></li>
       <li tabIndex={0}>
         <a>
           Parent
@@ -44,8 +44,8 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Get started</a>
-    <button className="btn btn-accent">Button</button>
+    
+    <button className="btn btn-accent"><Link to='/login'>Login</Link></button>
   </div>
 </div>
         </div>
