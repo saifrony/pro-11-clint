@@ -7,8 +7,7 @@ import Header from '../shared/Header';
 const Main = () => {
     return (
         <div>
-           <Header></Header>
-                 
+           <Header></Header>        
            <Outlet></Outlet>
            <Footer></Footer>
         </div>
