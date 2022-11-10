@@ -1,10 +1,18 @@
-import React from 'react';
+// import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+// import { AuthContext } from './contexts/AuthProvider/AuthProvider';
+import React from 'react';
 
 const Login = () => {
-    const handleLogin = event=>{
-        event.preventDefault();
-    }
+    // const{ createUser} = useContext(AuthContext)
+    // const handleLogin = event=>{
+    //     event.preventDefault();
+    //     const form = event.target;
+    //     const email = form.email.value;
+    //     const password = form.password.value;
+
+    //     createUser(email,password);
+    // }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -14,7 +22,7 @@ const Login = () => {
       <p className="py-6">Welcome lets you share a place to stay, connect with travellers, meet up and find accommodation on your journey. It is and will always be a free, open source, not-for-profit, democratic community.</p>
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <form onClick={handleLogin} className="card-body">
+      <form  className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>

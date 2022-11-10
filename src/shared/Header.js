@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img2 from '../assat/21.jpg'
 
 const Header = () => {
     return (
@@ -16,7 +17,8 @@ const Header = () => {
         <li><Link to='/Blog'>Blog</Link></li>
       </ul>
     </div>
-   <Link className="btn btn-ghost normal-case text-xl" to='/'>Visa Center</Link>
+   <Link className="btn btn-ghost normal-case text-xl" to='/'> <img className='m-2' src={img2} alt=''/> Visa Center</Link>
+   
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

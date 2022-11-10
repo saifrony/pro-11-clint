@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServiceCard = ({user}) => {
-    const{name,img} =user
+    const{name,img,rating,details,price} =user
 
     return (
         <div>
@@ -12,10 +12,10 @@ const ServiceCard = ({user}) => {
       {name}
       <div className="badge badge-secondary">NEW</div>
     </h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>{details}</p>
     <div className="card-actions justify-end">
-      <div className="badge badge-outline">Fashion</div> 
-      <div className="badge badge-outline">Products</div>
+      <div className="badge badge-outline">Price: {price}</div> 
+      <div className="badge badge-outline">Rating: {rating}</div>
     </div>
   </div>
 </div>

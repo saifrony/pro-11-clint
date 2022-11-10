@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ServiceCard from './Home/Home/ServiceCard';
 
 const Service = () => {
@@ -15,6 +16,9 @@ const Service = () => {
             {
                 users.map(user=><ServiceCard key={user._id} user={user}></ServiceCard>)
             }
+
+
+            <Link to='/services'><button type='button'>See All</button></Link>
         </div>
     );
 };
