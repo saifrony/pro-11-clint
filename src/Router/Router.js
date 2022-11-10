@@ -5,6 +5,7 @@ import Main from "../Main/Main"
 import Home from "../Pages/Home/Home/Home";
 import SignUp from "../SignUp"
 import Error from '../Error'
+import ServiceItem from "../Pages/Home/Home/ServiceItem";
 
 const routers  = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const routers  = createBrowserRouter([
             {
                 path:'/Signup',
                 element:<SignUp></SignUp>
+            },
+            {
+                path:'/service',
+                element:<ServiceItem></ServiceItem>
             }
 
         ]

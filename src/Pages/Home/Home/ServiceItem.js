@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import ServiceItems from './ServiceItems';
 
 const ServiceItem = () => {
 
-    const[item,setItem]=useState([]);
+    const[items,setItem]=useState([]);
     useEffect(()=>{
         fetch('http://localhost:5000/services')
         .then((res)=>res.json())
@@ -10,12 +11,11 @@ const ServiceItem = () => {
     }
     ,[])
     return (
-        <div>
-            <h2>{item.length}</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 p-5'>
             
           
             {
-                users.map(user=><ServiceCard key={user._id} user={user}></ServiceCard>)
+                items.map(item=> <ServiceItems key={item._id} item={item}></ServiceItems>)
             }
 
 

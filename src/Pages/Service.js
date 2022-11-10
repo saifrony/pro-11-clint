@@ -11,14 +11,15 @@ const Service = () => {
     }
     ,[])
     return (
+        <div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 p-5'>
           
             {
                 users.map(user=><ServiceCard key={user._id} user={user}></ServiceCard>)
             }
+        </div>
 
-
-            <Link to='/services'><button type='button'>See All</button></Link>
+            <p className='text-center m-5'><Link to='/services' ><button type='button' className=' px-5 py-3 font-semibold text-center bg-green-400 m-auto rounded '>See All</button></Link></p>
         </div>
     );
 };
