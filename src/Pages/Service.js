@@ -5,7 +5,7 @@ import ServiceCard from './Home/Home/ServiceCard';
 const Service = () => {
     const[users,setUser]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch('https://visa-server-2.vercel.app/services')
         .then((res)=>res.json())
         .then((data)=>setUser(data))
     }
