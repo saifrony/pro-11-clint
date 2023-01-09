@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home/Home";
 import SignUp from "../SignUp"
 import Error from '../Error'
 import ServiceItem from "../Pages/Home/Home/ServiceItem";
+import PrivateRoute from "./PrivateRoute";
 
 const routers  = createBrowserRouter([
     {
@@ -15,11 +16,11 @@ const routers  = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element:<Home></Home>
+                element:<PrivateRoute><Home></Home></PrivateRoute>
             },
             {
                 path:'/Blog',
-                element:<Blog></Blog>
+                element:<PrivateRoute><Blog></Blog></PrivateRoute>
             },
             {
                 path:'/login',

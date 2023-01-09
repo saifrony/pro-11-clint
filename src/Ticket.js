@@ -6,7 +6,7 @@ const Ticket = () => {
         <div>
             <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={img1} className="max-w-sm rounded-lg shadow-2xl" />
+    <img src={img1}  alt='' className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">AIR Ticket Offer!</h1>
       <p className="py-6">Prices shown on this page are estimated lowest prices only. Found in the last 45 days..</p>

@@ -13,6 +13,7 @@ const Service = () => {
     return (
         <div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 p-5'>
+    
           
             {
                 users.map(user=><ServiceCard key={user._id} user={user}></ServiceCard>)
