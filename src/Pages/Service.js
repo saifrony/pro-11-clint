@@ -20,7 +20,7 @@ const Service = () => {
             }
         </div>
 
-            <p className='text-center m-5'><Link to='/services' ><button type='button' className=' px-5 py-3 font-semibold text-center bg-green-400 m-auto rounded '>See All</button></Link></p>
+            <p className='text-center m-5'><Link to='/service' ><button type='button' className=' px-5 py-3 font-semibold text-center bg-green-400 m-auto rounded '>See All</button></Link></p>
         </div>
     );
 };
