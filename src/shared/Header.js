@@ -25,6 +25,7 @@ const Header = () => {
       <li><Link to='/'>Home</Link></li>
         <li><Link to='/signup'>SignUp</Link></li>
         <li><Link to='/Blog'>Blog</Link></li>
+        <li><Link to='/service'>Service</Link></li>
       </ul>
     </div>
    <Link className="btn btn-ghost normal-case text-xl" to='/'> <img className='m-2' src={img2} alt=''/> Visa Center</Link>
@@ -35,6 +36,7 @@ const Header = () => {
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/signup'>SignUp</Link></li>
       <li><Link to='/Blog'>Blog</Link></li>
+      <li><Link to='/service'>Service</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
